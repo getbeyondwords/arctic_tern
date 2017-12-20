@@ -1,0 +1,80 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+.sidebar-offcanvas {
+  margin-top: 60px;
+} 
+
+.list-group-item {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar-offcanvas {
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+         -o-transition: all .2s ease-out;
+            transition: all .2s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: fixed;
+    left: -70%;
+    top: 0;
+    width: 50%; /* 6 columns */
+    margin-top: 60px;
+    z-index: 99;
+  }
+  
+    .sidebar-offcanvas.active {
+    position: fixed;
+    left: -15px;
+    top: 0;
+    width: 50%; /* 6 columns */
+    margin-top: 60px;
+  }
+  
+    .list-group-item:first-child {
+    border-top-left-radius: 0px;
+  }
+    .list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+  }
+    .list-group-item {
+    min-width: 200px;
+  }
+}
